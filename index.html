@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CTP La Carpio — Web Development Specialty. Excellence in technical professional education in Costa Rica, certified by MEP." />
+  <title>CTP La Carpio · Web Development</title>
+
+  <!-- Safety Script: Forces content to show if AOS fails to load -->
+  <script>document.documentElement.className += ' js-loaded';</script>
+  <style>
+    /* If AOS never initializes, make elements visible */
+    html.js-loaded:not(.aos-init) [data-aos] { opacity: 1 !important; transform: none !important; }
+  </style>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo-placeholder.png" alt="CTP La Carpio" class="brand-logo" onerror="this.style.display='none'"/>
+        <span class="brand-text">CTP <strong>La Carpio</strong></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="mision-vision.html" class="nav-link">Mission & Vision</a>
+        <a href="subareas.html" class="nav-link">Subareas</a>
+        <a href="qr.html" class="nav-link">QR</a>
+        <a href="video.html" class="nav-link">Video</a>
+        <a href="contacto.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <canvas id="particles" class="particles"></canvas>
+    <div class="hero-gradient"></div>
+
+    <div class="container hero-content">
+      <p class="hero-eyebrow" data-aos="fade-down">
+        <i class="fa-solid fa-graduation-cap"></i>
+        Professional Technical College · MEP · Costa Rica
+      </p>
+
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+        CTP <span class="accent">La Carpio</span>
+      </h1>
+
+      <p class="hero-specialty" data-aos="fade-up" data-aos-delay="200">
+        Specialty in <span class="accent-soft">Web Development</span>
+      </p>
+
+      <p class="hero-desc" data-aos="fade-up" data-aos-delay="300">
+        We train full-stack developers with critical thinking, entrepreneurial vision, 
+        and technical mastery to face the challenges of the digital world.
+      </p>
+
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+        <a href="subareas.html" class="btn btn-primary">
+          <i class="fa-solid fa-code"></i> Explore Subareas
+        </a>
+        <a href="mision-vision.html" class="btn btn-ghost">
+          <i class="fa-solid fa-bullseye"></i> Mission & Vision
+        </a>
+      </div>
+
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+        <div class="stat"><span class="stat-num">6</span><span class="stat-label">Subareas</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Years</span></div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">MEP</span></div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============ EXPLORE SECTION ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="kicker">Welcome</p>
+        <h2 class="section-title">Discover Our Specialty</h2>
+        <p class="section-sub">A tour through the pillars that define the technical profile of the Web Development student at CTP La Carpio.</p>
+      </div>
+
+      <div class="explore-grid">
+        <a href="mision-vision.html" class="explore-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="explore-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Mission & Vision</h3>
+          <p>Our educational commitment to the La Carpio community.</p>
+          <span class="explore-link">See more <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a href="subareas.html" class="explore-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="explore-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>Subareas</h3>
+          <p>6 specialized modules covering the entire tech stack.</p>
+          <span class="explore-link">See more <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a href="qr.html" class="explore-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="explore-icon"><i class="fa-solid fa-qrcode"></i></div>
+          <h3>MEP Documents</h3>
+          <p>Access official program records via QR codes.</p>
+          <span class="explore-link">See more <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a href="video.html" class="explore-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="explore-icon"><i class="fa-solid fa-clapperboard"></i></div>
+          <h3>Info Video</h3>
+          <p>Discover the benefits of Technical English in our specialty.</p>
+          <span class="explore-link">See more <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECH STACK ============ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="kicker">Tech Stack</p>
+        <h2 class="section-title">Technologies You Will Master</h2>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-pill" data-aos="zoom-in" data-aos-delay="0"><i class="fa-brands fa-html5"></i> HTML5</div>
+        <div class="tech-pill" data-aos="zoom-in" data-aos-delay="50"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+        <div class="tech-pill" data-aos="zoom-in" data-aos-delay="100"><i class="fa-brands fa-js"></i> JavaScript</div>
+        <div class="tech-pill" data-aos="zoom-in" data-aos-delay="150"><i class="fa-brands fa-python"></i> Python</div>
+        <div class="tech-pill" data-aos="zoom-in" data-aos-delay="200"><i class="fa-brands fa-php"></i> PHP</div>
+        <div class="tech-pill" data-aos="zoom-in" data-aos-delay="250"><i class="fa-solid fa-hashtag"></i> C#</div>
+        <div class="tech-pill" data-aos="zoom-in" data-aos-delay="300"><i class="fa-solid fa-database"></i> Databases</div>
+        <div class="tech-pill" data-aos="zoom-in" data-aos-delay="350"><i class="fa-brands fa-figma"></i> UI/UX</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo-placeholder.png" alt="CTP La Carpio" class="footer-logo" onerror="this.style.display='none'"/>
+        <div>
+          <p class="footer-title">CTP La Carpio</p>
+          <p class="footer-sub">Web Development Specialty · MEP</p>
+        </div>
+      </div>
+      <div class="footer-mep">
+        <img src="assets/mep-logo-placeholder.png" alt="MEP" class="mep-logo" onerror="this.style.display='none'"/>
+        <span>Ministry of Public Education</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> CTP La Carpio · All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
