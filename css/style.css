@@ -1132,3 +1132,23 @@ ul { list-style: none; }
     transition-duration: 0.01ms !important;
   }
 }
+/* Language Toggle Button */
+.lang-toggle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  width: 42px; 
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: var(--bg-soft);
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  transition: transform 0.3s var(--ease), background 0.3s, border-color 0.3s, color 0.3s;
+}
+.lang-toggle:hover {
+  transform: scale(1.06);
+  border-color: var(--card-hover-border);
+  color: var(--accent);
+}

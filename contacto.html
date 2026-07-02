@@ -3,15 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact information and location of CTP La Carpio." />
   <title>Contact · CTP La Carpio</title>
-
-  <!-- Safety Script: Forces content to show if AOS fails to load -->
   <script>document.documentElement.className += ' js-loaded';</script>
-  <style>
-    html.js-loaded:not(.aos-init) [data-aos] { opacity: 1 !important; transform: none !important; }
-  </style>
-
+  <style>html.js-loaded:not(.aos-init) [data-aos] { opacity: 1 !important; transform: none !important; }</style>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
@@ -28,75 +22,57 @@
         <span class="brand-text">CTP <strong>La Carpio</strong></span>
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="mision-vision.html" class="nav-link">Mission & Vision</a>
-        <a href="subareas.html" class="nav-link">Subareas</a>
-        <a href="qr.html" class="nav-link">QR</a>
-        <a href="video.html" class="nav-link">Video</a>
-        <a href="contacto.html" class="nav-link active">Contact</a>
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="mision-vision.html" class="nav-link" data-i18n="nav.mv">Mission & Vision</a>
+        <a href="subareas.html" class="nav-link" data-i18n="nav.subareas">Subareas</a>
+        <a href="qr.html" class="nav-link" data-i18n="nav.qr">QR</a>
+        <a href="video.html" class="nav-link" data-i18n="nav.video">Video</a>
+        <a href="contacto.html" class="nav-link active" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
+        <button class="lang-toggle" id="langToggle" aria-label="Change language"><span>ES</span></button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
 
   <section class="page-hero">
     <div class="container">
-      <p class="kicker" data-aos="fade-down"><i class="fa-solid fa-address-card"></i> About Us</p>
-      <h1 class="page-title" data-aos="fade-up" data-aos-delay="100">Contact <span class="accent">& Location</span></h1>
-      <p class="page-sub" data-aos="fade-up" data-aos-delay="200">
-        Institutional information for CTP La Carpio and the Web Development specialty.
-      </p>
+      <p class="kicker" data-aos="fade-down"><i class="fa-solid fa-address-card"></i> <span data-i18n="cont.kicker">About Us</span></p>
+      <h1 class="page-title" data-aos="fade-up" data-aos-delay="100" data-i18n="cont.title">Contact <span class="accent">& Location</span></h1>
+      <p class="page-sub" data-aos="fade-up" data-aos-delay="200" data-i18n="cont.sub">Institutional information for CTP La Carpio and the Web Development specialty.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
       <div class="contact-layout">
-
         <div class="contact-card glass" data-aos="fade-right">
           <div class="contact-avatar">
             <img src="assets/logo-placeholder.png" alt="CTP La Carpio" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
             <div class="contact-avatar-fallback" style="display:none;"><i class="fa-solid fa-school"></i></div>
           </div>
           <h2 class="contact-name">CTP La Carpio</h2>
-          <p class="contact-role">Professional Technical College</p>
-          <p class="contact-specialty">Specialty: Web Development</p>
+          <p class="contact-role" data-i18n="cont.role">Professional Technical College</p>
+          <p class="contact-specialty" data-i18n="cont.spec">Specialty: Web Development</p>
 
           <ul class="contact-list">
             <li>
               <span class="contact-ic"><i class="fa-solid fa-location-dot"></i></span>
-              <div>
-                <strong>Address</strong>
-                <p>La Carpio, San José, Costa Rica</p>
-              </div>
+              <div><strong data-i18n="cont.address">Address</strong><p data-i18n="cont.address_val">La Carpio, San José, Costa Rica</p></div>
             </li>
             <li>
               <span class="contact-ic"><i class="fa-solid fa-building-columns"></i></span>
-              <div>
-                <strong>Institution</strong>
-                <p>Ministry of Public Education (MEP)</p>
-              </div>
+              <div><strong data-i18n="cont.inst">Institution</strong><p data-i18n="cont.inst_val">Ministry of Public Education (MEP)</p></div>
             </li>
             <li>
               <span class="contact-ic"><i class="fa-solid fa-graduation-cap"></i></span>
-              <div>
-                <strong>Modality</strong>
-                <p>Professional Technical Education · In-person</p>
-              </div>
+              <div><strong data-i18n="cont.mod">Modality</strong><p data-i18n="cont.mod_val">Professional Technical Education · In-person</p></div>
             </li>
             <li>
               <span class="contact-ic"><i class="fa-solid fa-clock"></i></span>
-              <div>
-                <strong>Schedule</strong>
-                <p>Monday to Friday · 7:00 a.m. – 4:00 p.m.</p>
-              </div>
+              <div><strong data-i18n="cont.sched">Schedule</strong><p data-i18n="cont.sched_val">Monday to Friday · 7:00 a.m. – 4:00 p.m.</p></div>
             </li>
           </ul>
 
@@ -109,47 +85,27 @@
         </div>
 
         <div class="contact-info" data-aos="fade-left" data-aos-delay="150">
-          <h2 class="contact-info-title">About the Specialty</h2>
-          <p>
-            The <strong>Web Development</strong> specialty at CTP La Carpio is part of the 
-            academic offering of Technical Education by the MEP. It is designed to prepare 
-            students with technical, humanistic, and entrepreneurial skills that allow them 
-            to enter the labor market or continue their higher education.
-          </p>
-          <p>
-            Our institution is located in <strong>La Carpio, San José</strong>, and serves a 
-            diverse and entrepreneurial community. The teaching staff is committed to academic 
-            excellence and the comprehensive well-being of the student body.
-          </p>
+          <h2 class="contact-info-title" data-i18n="cont.about.title">About the Specialty</h2>
+          <p data-i18n="cont.about.p1">The <strong>Web Development</strong> specialty at CTP La Carpio is part of the academic offering of Technical Education by the MEP. It is designed to prepare students with technical, humanistic, and entrepreneurial skills that allow them to enter the labor market or continue their higher education.</p>
+          <p data-i18n="cont.about.p2">Our institution is located in <strong>La Carpio, San José</strong>, and serves a diverse and entrepreneurial community. The teaching staff is committed to academic excellence and the comprehensive well-being of the student body.</p>
 
           <div class="contact-features">
             <div class="feature">
               <i class="fa-solid fa-laptop-code"></i>
-              <div>
-                <h4>Technical Labs</h4>
-                <p>Updated equipment for development and IT support practice.</p>
-              </div>
+              <div><h4 data-i18n="cont.f1.title">Technical Labs</h4><p data-i18n="cont.f1.desc">Updated equipment for development and IT support practice.</p></div>
             </div>
             <div class="feature">
               <i class="fa-solid fa-handshake-angle"></i>
-              <div>
-                <h4>Corporate Linkage</h4>
-                <p>Internships and real projects with the Costa Rican productive sector.</p>
-              </div>
+              <div><h4 data-i18n="cont.f2.title">Corporate Linkage</h4><p data-i18n="cont.f2.desc">Internships and real projects with the Costa Rican productive sector.</p></div>
             </div>
             <div class="feature">
               <i class="fa-solid fa-certificate"></i>
-              <div>
-                <h4>MEP Degree</h4>
-                <p>Graduates with an official degree as a Mid-Level Technician in Web Development.</p>
-              </div>
+              <div><h4 data-i18n="cont.f3.title">MEP Degree</h4><p data-i18n="cont.f3.desc">Graduates with an official degree as a Mid-Level Technician in Web Development.</p></div>
             </div>
           </div>
         </div>
-
       </div>
 
-      <!-- Updated Map Location -->
       <div class="map-wrap" data-aos="fade-up">
         <iframe
           title="CTP La Carpio Location"
@@ -165,22 +121,18 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <img src="assets/logo-placeholder.png" alt="CTP La Carpio" class="footer-logo" onerror="this.style.display='none'"/>
-        <div>
-          <p class="footer-title">CTP La Carpio</p>
-          <p class="footer-sub">Web Development Specialty · MEP</p>
-        </div>
+        <div><p class="footer-title">CTP La Carpio</p><p class="footer-sub" data-i18n="footer.sub">Web Development Specialty · MEP</p></div>
       </div>
       <div class="footer-mep">
         <img src="assets/mep-logo-placeholder.png" alt="MEP" class="mep-logo" onerror="this.style.display='none'"/>
-        <span>Ministry of Public Education</span>
+        <span data-i18n="footer.mep">Ministry of Public Education</span>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© <span id="year"></span> CTP La Carpio · All rights reserved.</p>
-    </div>
+    <div class="footer-bottom"><p>© <span id="year"></span> CTP La Carpio · <span data-i18n="footer.copy">All rights reserved.</span></p></div>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

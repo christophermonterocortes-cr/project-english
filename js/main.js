@@ -208,3 +208,49 @@
   }
 
 })();
+/* ---------- Language Toggle ---------- */
+const langToggle = document.getElementById('langToggle');
+const langText = langToggle ? langToggle.querySelector('span') : null;
+
+function setLanguage(lang) {
+  if (typeof translations === 'undefined') return;
+  if (!translations[lang]) return;
+
+  // Update all text elements
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    const translation = translations[lang][key];
+    if (translation) {
+      element.innerHTML = translation; // innerHTML allows spans for accent colors
+    }
+  });
+
+  // Update toggle button text (shows the opposite language)
+  if (langText) {
+    langText.textContent = lang === 'en' ? 'ES' : 'EN';
+  }
+
+  // Update html lang attribute
+  document.documentElement.lang = lang;
+
+  // Save preference
+  try {
+    localStorage.setItem('ctp-lang', lang);
+  } catch (e) {}
+}
+
+// Initialize language on load
+let savedLang = 'en'; // Default to English
+try {
+  savedLang = localStorage.getItem('ctp-lang') || 'en';
+} catch (e) {}
+setLanguage(savedLang);
+
+// Toggle language on button click
+if (langToggle) {
+  langToggle.addEventListener('click', () => {
+    const currentLang = document.documentElement.lang;
+    const newLang = currentLang === 'en' ? 'es' : 'en';
+    setLanguage(newLang);
+  });
+}

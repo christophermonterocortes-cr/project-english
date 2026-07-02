@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Video informativo de la subárea de Inglés Técnico del CTP La Carpio." />
   <title>Video · CTP La Carpio</title>
-
+  <script>document.documentElement.className += ' js-loaded';</script>
+  <style>html.js-loaded:not(.aos-init) [data-aos] { opacity: 1 !important; transform: none !important; }</style>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
@@ -22,64 +22,48 @@
         <span class="brand-text">CTP <strong>La Carpio</strong></span>
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="nav-link">Inicio</a>
-        <a href="mision-vision.html" class="nav-link">Misión y Visión</a>
-        <a href="subareas.html" class="nav-link">Subáreas</a>
-        <a href="qr.html" class="nav-link">QR</a>
-        <a href="video.html" class="nav-link active">Video</a>
-        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="mision-vision.html" class="nav-link" data-i18n="nav.mv">Mission & Vision</a>
+        <a href="subareas.html" class="nav-link" data-i18n="nav.subareas">Subareas</a>
+        <a href="qr.html" class="nav-link" data-i18n="nav.qr">QR</a>
+        <a href="video.html" class="nav-link active" data-i18n="nav.video">Video</a>
+        <a href="contacto.html" class="nav-link" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Menú">
-          <span></span><span></span><span></span>
-        </button>
+        <button class="lang-toggle" id="langToggle" aria-label="Change language"><span>ES</span></button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
 
   <section class="page-hero">
     <div class="container">
-      <p class="kicker" data-aos="fade-down"><i class="fa-solid fa-clapperboard"></i> Multimedia</p>
-      <h1 class="page-title" data-aos="fade-up" data-aos-delay="100">Video <span class="accent">Informativo</span></h1>
-      <p class="page-sub" data-aos="fade-up" data-aos-delay="200">
-        Conoce más sobre la subárea de Inglés Técnico y su impacto en el perfil profesional.
-      </p>
+      <p class="kicker" data-aos="fade-down"><i class="fa-solid fa-clapperboard"></i> <span data-i18n="vid.kicker">Multimedia</span></p>
+      <h1 class="page-title" data-aos="fade-up" data-aos-delay="100" data-i18n="vid.title">Info <span class="accent">Video</span></h1>
+      <p class="page-sub" data-aos="fade-up" data-aos-delay="200" data-i18n="vid.sub">Learn more about the Technical English subarea and its impact on the professional profile.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container container-narrow">
       <div class="video-wrap" data-aos="fade-up">
-        <video controls preload="metadata" poster="" class="video-player">
+        <video controls preload="metadata" class="video-player">
           <source src="assets/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag. Please download the video from <a href="assets/video.mp4">this link</a>.
+          Your browser does not support the video tag.
         </video>
       </div>
 
       <article class="video-info" data-aos="fade-up" data-aos-delay="100">
-        <h2 class="video-info-title">Technical English Subarea — Benefits & Profile</h2>
-        <p class="video-info-text">
-          The <strong>English Oriented to Web Development</strong> subarea is a key component of the
-          Web Development specialty at CTP La Carpio. It equips students with the technical
-          vocabulary, reading comprehension skills, and professional communication strategies
-          required to thrive in an international tech environment.
-        </p>
-        <p class="video-info-text">
-          Throughout this subarea, students learn to read and interpret official documentation,
-          collaborate on platforms such as GitHub, participate in stand-up meetings, and present
-          technical projects confidently in English. The goal is to prepare graduates who can
-          work seamlessly in remote teams, freelance for international clients, and pursue
-          continuous learning through global tech resources.
-        </p>
+        <h2 class="video-info-title" data-i18n="vid.info.title">Technical English Subarea — Benefits & Profile</h2>
+        <p class="video-info-text" data-i18n="vid.info.p1">The <strong>English Oriented to Web Development</strong> subarea is a key component of the Web Development specialty at CTP La Carpio. It equips students with the technical vocabulary, reading comprehension skills, and professional communication strategies required to thrive in an international tech environment.</p>
+        <p class="video-info-text" data-i18n="vid.info.p2">Throughout this subarea, students learn to read and interpret official documentation, collaborate on platforms such as GitHub, participate in stand-up meetings, and present technical projects confidently in English. The goal is to prepare graduates who can work seamlessly in remote teams, freelance for international clients, and pursue continuous learning through global tech resources.</p>
 
         <div class="video-benefits">
-          <div class="benefit"><i class="fa-solid fa-book"></i><span>Technical documentation reading</span></div>
-          <div class="benefit"><i class="fa-solid fa-comments"></i><span>Professional communication</span></div>
-          <div class="benefit"><i class="fa-solid fa-globe"></i><span>Global job market readiness</span></div>
-          <div class="benefit"><i class="fa-solid fa-users"></i><span>Remote team collaboration</span></div>
+          <div class="benefit"><i class="fa-solid fa-book"></i><span data-i18n="vid.b1">Technical documentation reading</span></div>
+          <div class="benefit"><i class="fa-solid fa-comments"></i><span data-i18n="vid.b2">Professional communication</span></div>
+          <div class="benefit"><i class="fa-solid fa-globe"></i><span data-i18n="vid.b3">Global job market readiness</span></div>
+          <div class="benefit"><i class="fa-solid fa-users"></i><span data-i18n="vid.b4">Remote team collaboration</span></div>
         </div>
       </article>
     </div>
@@ -89,22 +73,18 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <img src="assets/logo-placeholder.png" alt="CTP La Carpio" class="footer-logo" onerror="this.style.display='none'"/>
-        <div>
-          <p class="footer-title">CTP La Carpio</p>
-          <p class="footer-sub">Especialidad Desarrollo Web · MEP</p>
-        </div>
+        <div><p class="footer-title">CTP La Carpio</p><p class="footer-sub" data-i18n="footer.sub">Web Development Specialty · MEP</p></div>
       </div>
       <div class="footer-mep">
         <img src="assets/mep-logo-placeholder.png" alt="MEP" class="mep-logo" onerror="this.style.display='none'"/>
-        <span>Ministerio de Educación Pública</span>
+        <span data-i18n="footer.mep">Ministry of Public Education</span>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© <span id="year"></span> CTP La Carpio · Todos los derechos reservados.</p>
-    </div>
+    <div class="footer-bottom"><p>© <span id="year"></span> CTP La Carpio · <span data-i18n="footer.copy">All rights reserved.</span></p></div>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

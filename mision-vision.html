@@ -3,15 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mission and Vision of CTP La Carpio — Web Development Specialty." />
   <title>Mission & Vision · CTP La Carpio</title>
-
-  <!-- Safety Script: Forces content to show if AOS fails to load -->
   <script>document.documentElement.className += ' js-loaded';</script>
-  <style>
-    html.js-loaded:not(.aos-init) [data-aos] { opacity: 1 !important; transform: none !important; }
-  </style>
-
+  <style>html.js-loaded:not(.aos-init) [data-aos] { opacity: 1 !important; transform: none !important; }</style>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
@@ -21,7 +15,6 @@
 </head>
 <body>
 
-  <!-- ============ NAVBAR ============ -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
       <a href="index.html" class="brand">
@@ -29,108 +22,84 @@
         <span class="brand-text">CTP <strong>La Carpio</strong></span>
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="mision-vision.html" class="nav-link active">Mission & Vision</a>
-        <a href="subareas.html" class="nav-link">Subareas</a>
-        <a href="qr.html" class="nav-link">QR</a>
-        <a href="video.html" class="nav-link">Video</a>
-        <a href="contacto.html" class="nav-link">Contact</a>
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="mision-vision.html" class="nav-link active" data-i18n="nav.mv">Mission & Vision</a>
+        <a href="subareas.html" class="nav-link" data-i18n="nav.subareas">Subareas</a>
+        <a href="qr.html" class="nav-link" data-i18n="nav.qr">QR</a>
+        <a href="video.html" class="nav-link" data-i18n="nav.video">Video</a>
+        <a href="contacto.html" class="nav-link" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
+        <button class="lang-toggle" id="langToggle" aria-label="Change language"><span>ES</span></button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
 
-  <!-- ============ PAGE HERO ============ -->
   <section class="page-hero">
     <div class="container">
-      <p class="kicker" data-aos="fade-down"><i class="fa-solid fa-bullseye"></i> Our Horizon</p>
-      <h1 class="page-title" data-aos="fade-up" data-aos-delay="100">Mission <span class="accent">&</span> Vision</h1>
-      <p class="page-sub" data-aos="fade-up" data-aos-delay="200">
-        The institutional principles that guide the training of future web developers at CTP La Carpio.
-      </p>
+      <p class="kicker" data-aos="fade-down"><i class="fa-solid fa-bullseye"></i> <span data-i18n="mv.kicker">Our Horizon</span></p>
+      <h1 class="page-title" data-aos="fade-up" data-aos-delay="100" data-i18n="mv.title">Mission <span class="accent">&</span> Vision</h1>
+      <p class="page-sub" data-aos="fade-up" data-aos-delay="200" data-i18n="mv.sub">The institutional principles that guide the training of future web developers at CTP La Carpio.</p>
     </div>
   </section>
 
-  <!-- ============ MISSION & VISION CARDS ============ -->
   <section class="section">
     <div class="container">
       <div class="mv-grid">
-
         <article class="mv-card" data-aos="fade-right">
           <div class="mv-icon"><i class="fa-solid fa-flag"></i></div>
-          <h2 class="mv-title">Mission</h2>
-          <p class="mv-text">
-            An educational center of excellence that provides the student population with opportunities 
-            for comprehensive training and professional growth, stimulating entrepreneurship and 
-            insertion into the labor market.
-          </p>
+          <h2 class="mv-title" data-i18n="mv.mission.title">Mission</h2>
+          <p class="mv-text" data-i18n="mv.mission.text">An educational center of excellence that provides the student population with opportunities for comprehensive training and professional growth, stimulating entrepreneurship and insertion into the labor market.</p>
           <div class="mv-tags">
-            <span>Comprehensive Training</span>
-            <span>Entrepreneurship</span>
-            <span>Labor Market</span>
+            <span data-i18n="val.emp">Entrepreneurship</span>
+            <span data-i18n="stat.years">Years</span>
+            <span data-i18n="cont.f2.title">Corporate Linkage</span>
           </div>
         </article>
-
         <article class="mv-card" data-aos="fade-left" data-aos-delay="150">
           <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
-          <h2 class="mv-title">Vision</h2>
-          <p class="mv-text">
-            To be an institution that provides well-being to students through a quality educational 
-            system, promoting excellence and a culture of peace, in order to achieve transformation 
-            in the comprehensive development of the educational community.
-          </p>
+          <h2 class="mv-title" data-i18n="mv.vision.title">Vision</h2>
+          <p class="mv-text" data-i18n="mv.vision.text">To be an institution that provides well-being to students through a quality educational system, promoting excellence and a culture of peace, in order to achieve transformation in the comprehensive development of the educational community.</p>
           <div class="mv-tags">
-            <span>Educational Quality</span>
-            <span>Culture of Peace</span>
-            <span>Transformation</span>
+            <span data-i18n="val.excel">Excellence</span>
+            <span data-i18n="val.peace">Culture of Peace</span>
+            <span data-i18n="val.innov">Innovation</span>
           </div>
         </article>
-
       </div>
 
-      <!-- ============ VALUES ============ -->
       <div class="values" data-aos="fade-up">
-        <h3 class="values-title">Institutional Values</h3>
+        <h3 class="values-title" data-i18n="mv.values.title">Institutional Values</h3>
         <div class="values-grid">
-          <div class="value-item"><i class="fa-solid fa-award"></i><span>Excellence</span></div>
-          <div class="value-item"><i class="fa-solid fa-handshake"></i><span>Integrity</span></div>
-          <div class="value-item"><i class="fa-solid fa-seedling"></i><span>Entrepreneurship</span></div>
-          <div class="value-item"><i class="fa-solid fa-people-group"></i><span>Inclusion</span></div>
-          <div class="value-item"><i class="fa-solid fa-lightbulb"></i><span>Innovation</span></div>
-          <div class="value-item"><i class="fa-solid fa-heart"></i><span>Culture of Peace</span></div>
+          <div class="value-item"><i class="fa-solid fa-award"></i><span data-i18n="val.excel">Excellence</span></div>
+          <div class="value-item"><i class="fa-solid fa-handshake"></i><span data-i18n="val.integrity">Integrity</span></div>
+          <div class="value-item"><i class="fa-solid fa-seedling"></i><span data-i18n="val.emp">Entrepreneurship</span></div>
+          <div class="value-item"><i class="fa-solid fa-people-group"></i><span data-i18n="val.inc">Inclusion</span></div>
+          <div class="value-item"><i class="fa-solid fa-lightbulb"></i><span data-i18n="val.innov">Innovation</span></div>
+          <div class="value-item"><i class="fa-solid fa-heart"></i><span data-i18n="val.peace">Culture of Peace</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
         <img src="assets/logo-placeholder.png" alt="CTP La Carpio" class="footer-logo" onerror="this.style.display='none'"/>
-        <div>
-          <p class="footer-title">CTP La Carpio</p>
-          <p class="footer-sub">Web Development Specialty · MEP</p>
-        </div>
+        <div><p class="footer-title">CTP La Carpio</p><p class="footer-sub" data-i18n="footer.sub">Web Development Specialty · MEP</p></div>
       </div>
       <div class="footer-mep">
         <img src="assets/mep-logo-placeholder.png" alt="MEP" class="mep-logo" onerror="this.style.display='none'"/>
-        <span>Ministry of Public Education</span>
+        <span data-i18n="footer.mep">Ministry of Public Education</span>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© <span id="year"></span> CTP La Carpio · All rights reserved.</p>
-    </div>
+    <div class="footer-bottom"><p>© <span id="year"></span> CTP La Carpio · <span data-i18n="footer.copy">All rights reserved.</span></p></div>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

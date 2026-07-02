@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Códigos QR oficiales del programa Desarrollo Web del CTP La Carpio." />
-  <title>Códigos QR · CTP La Carpio</title>
-
+  <title>QR Codes · CTP La Carpio</title>
+  <script>document.documentElement.className += ' js-loaded';</script>
+  <style>html.js-loaded:not(.aos-init) [data-aos] { opacity: 1 !important; transform: none !important; }</style>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
@@ -22,103 +22,69 @@
         <span class="brand-text">CTP <strong>La Carpio</strong></span>
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="nav-link">Inicio</a>
-        <a href="mision-vision.html" class="nav-link">Misión y Visión</a>
-        <a href="subareas.html" class="nav-link">Subáreas</a>
-        <a href="qr.html" class="nav-link active">QR</a>
-        <a href="video.html" class="nav-link">Video</a>
-        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="mision-vision.html" class="nav-link" data-i18n="nav.mv">Mission & Vision</a>
+        <a href="subareas.html" class="nav-link" data-i18n="nav.subareas">Subareas</a>
+        <a href="qr.html" class="nav-link active" data-i18n="nav.qr">QR</a>
+        <a href="video.html" class="nav-link" data-i18n="nav.video">Video</a>
+        <a href="contacto.html" class="nav-link" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Menú">
-          <span></span><span></span><span></span>
-        </button>
+        <button class="lang-toggle" id="langToggle" aria-label="Change language"><span>ES</span></button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
 
   <section class="page-hero">
     <div class="container">
-      <p class="kicker" data-aos="fade-down"><i class="fa-solid fa-qrcode"></i> Accesos oficiales</p>
-      <h1 class="page-title" data-aos="fade-up" data-aos-delay="100">Códigos <span class="accent">QR</span></h1>
-      <p class="page-sub" data-aos="fade-up" data-aos-delay="200">
-        Escanea cada código para acceder a la información oficial del programa de Desarrollo Web del MEP.
-      </p>
+      <p class="kicker" data-aos="fade-down"><i class="fa-solid fa-qrcode"></i> <span data-i18n="qr.kicker">Official Access</span></p>
+      <h1 class="page-title" data-aos="fade-up" data-aos-delay="100" data-i18n="qr.title">QR <span class="accent">Codes</span></h1>
+      <p class="page-sub" data-aos="fade-up" data-aos-delay="200" data-i18n="qr.sub">Scan each code to access official information about the MEP Web Development program.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
       <div class="qr-grid">
-
         <article class="qr-card" data-aos="zoom-in" data-aos-delay="0">
           <div class="qr-img-wrap">
-            <img src="assets/qr1.png" alt="QR 1 — Programa de Estudio Desarrollo Web"
-                 onerror="this.onerror=null; this.src='https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://www.mep.go.cr/educacion-tecnica';" />
+            <img src="assets/qr1.png" alt="QR 1" onerror="this.onerror=null; this.src='https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://www.mep.go.cr/educacion-tecnica';" />
           </div>
-          <h3 class="qr-title">Programa de Estudio</h3>
-          <p class="qr-note">
-            Enlace al programa oficial de la especialidad Desarrollo Web del MEP, con el plan
-            de estudios completo y los objetivos de aprendizaje.
-          </p>
-          <a href="https://www.mep.go.cr" target="_blank" rel="noopener" class="qr-link">
-            Abrir enlace <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
+          <h3 class="qr-title" data-i18n="qr1.title">Study Program</h3>
+          <p class="qr-note" data-i18n="qr1.note">Link to the official MEP syllabus for the Web Development specialty, with the full curriculum and learning objectives.</p>
+          <a href="https://www.mep.go.cr" target="_blank" rel="noopener" class="qr-link"><span data-i18n="qr.open">Open link</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </article>
-
         <article class="qr-card" data-aos="zoom-in" data-aos-delay="100">
           <div class="qr-img-wrap">
-            <img src="assets/qr2.png" alt="QR 2 — Educación Técnica MEP"
-                 onerror="this.onerror=null; this.src='https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://www.mep.go.cr/educacion-tecnica';" />
+            <img src="assets/qr2.png" alt="QR 2" onerror="this.onerror=null; this.src='https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://www.mep.go.cr/educacion-tecnica';" />
           </div>
-          <h3 class="qr-title">Educación Técnica</h3>
-          <p class="qr-note">
-            Portal de la Dirección de Educación Técnica del MEP, con información sobre los
-            colegios técnicos y sus especialidades a nivel nacional.
-          </p>
-          <a href="https://www.mep.go.cr/educacion-tecnica" target="_blank" rel="noopener" class="qr-link">
-            Abrir enlace <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
+          <h3 class="qr-title" data-i18n="qr2.title">Technical Education</h3>
+          <p class="qr-note" data-i18n="qr2.note">Portal of the Directorate of Technical Education of the MEP, with info on technical colleges and their specialties nationwide.</p>
+          <a href="https://www.mep.go.cr/educacion-tecnica" target="_blank" rel="noopener" class="qr-link"><span data-i18n="qr.open">Open link</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </article>
-
         <article class="qr-card" data-aos="zoom-in" data-aos-delay="200">
           <div class="qr-img-wrap">
-            <img src="assets/qr3.png" alt="QR 3 — Perfil del Estudiante"
-                 onerror="this.onerror=null; this.src='https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://www.mep.go.cr';" />
+            <img src="assets/qr3.png" alt="QR 3" onerror="this.onerror=null; this.src='https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://www.mep.go.cr';" />
           </div>
-          <h3 class="qr-title">Perfil del Estudiante</h3>
-          <p class="qr-note">
-            Documento oficial con el perfil de egreso, competencias y habilidades que el
-            estudiante de Desarrollo Web adquiere durante la especialidad.
-          </p>
-          <a href="https://www.mep.go.cr" target="_blank" rel="noopener" class="qr-link">
-            Abrir enlace <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
+          <h3 class="qr-title" data-i18n="qr3.title">Student Profile</h3>
+          <p class="qr-note" data-i18n="qr3.note">Official document with the graduation profile, competencies and skills acquired by students during the specialty.</p>
+          <a href="https://www.mep.go.cr" target="_blank" rel="noopener" class="qr-link"><span data-i18n="qr.open">Open link</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </article>
-
         <article class="qr-card" data-aos="zoom-in" data-aos-delay="300">
           <div class="qr-img-wrap">
-            <img src="assets/qr4.png" alt="QR 4 — CTP La Carpio"
-                 onerror="this.onerror=null; this.src='https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://www.mep.go.cr';" />
+            <img src="assets/qr4.png" alt="QR 4" onerror="this.onerror=null; this.src='https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://www.mep.go.cr';" />
           </div>
-          <h3 class="qr-title">CTP La Carpio</h3>
-          <p class="qr-note">
-            Información institucional del Colegio Técnico Profesional La Carpio: ubicación,
-            servicios educativos y oferta académica vigente.
-          </p>
-          <a href="https://www.mep.go.cr" target="_blank" rel="noopener" class="qr-link">
-            Abrir enlace <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
+          <h3 class="qr-title" data-i18n="qr4.title">CTP La Carpio</h3>
+          <p class="qr-note" data-i18n="qr4.note">Institutional information of the Professional Technical College La Carpio: location, educational services and current academic offer.</p>
+          <a href="https://www.mep.go.cr" target="_blank" rel="noopener" class="qr-link"><span data-i18n="qr.open">Open link</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </article>
-
       </div>
 
       <div class="qr-info" data-aos="fade-up">
         <i class="fa-solid fa-circle-info"></i>
-        <p>Para escanear los códigos QR, utiliza la cámara de tu teléfono o cualquier aplicación lectora de QR. Todos los enlaces dirigen a sitios oficiales del Ministerio de Educación Pública de Costa Rica.</p>
+        <p data-i18n="qr.info">To scan the QR codes, use your phone's camera or any QR reader app. All links direct to official websites of the Ministry of Public Education of Costa Rica.</p>
       </div>
     </div>
   </section>
@@ -127,22 +93,18 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <img src="assets/logo-placeholder.png" alt="CTP La Carpio" class="footer-logo" onerror="this.style.display='none'"/>
-        <div>
-          <p class="footer-title">CTP La Carpio</p>
-          <p class="footer-sub">Especialidad Desarrollo Web · MEP</p>
-        </div>
+        <div><p class="footer-title">CTP La Carpio</p><p class="footer-sub" data-i18n="footer.sub">Web Development Specialty · MEP</p></div>
       </div>
       <div class="footer-mep">
         <img src="assets/mep-logo-placeholder.png" alt="MEP" class="mep-logo" onerror="this.style.display='none'"/>
-        <span>Ministerio de Educación Pública</span>
+        <span data-i18n="footer.mep">Ministry of Public Education</span>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© <span id="year"></span> CTP La Carpio · Todos los derechos reservados.</p>
-    </div>
+    <div class="footer-bottom"><p>© <span id="year"></span> CTP La Carpio · <span data-i18n="footer.copy">All rights reserved.</span></p></div>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

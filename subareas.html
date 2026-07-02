@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Subáreas de la especialidad Desarrollo Web del CTP La Carpio." />
-  <title>Subáreas · CTP La Carpio</title>
-
+  <title>Subareas · CTP La Carpio</title>
+  <script>document.documentElement.className += ' js-loaded';</script>
+  <style>html.js-loaded:not(.aos-init) [data-aos] { opacity: 1 !important; transform: none !important; }</style>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
@@ -22,116 +22,68 @@
         <span class="brand-text">CTP <strong>La Carpio</strong></span>
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="nav-link">Inicio</a>
-        <a href="mision-vision.html" class="nav-link">Misión y Visión</a>
-        <a href="subareas.html" class="nav-link active">Subáreas</a>
-        <a href="qr.html" class="nav-link">QR</a>
-        <a href="video.html" class="nav-link">Video</a>
-        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="mision-vision.html" class="nav-link" data-i18n="nav.mv">Mission & Vision</a>
+        <a href="subareas.html" class="nav-link active" data-i18n="nav.subareas">Subareas</a>
+        <a href="qr.html" class="nav-link" data-i18n="nav.qr">QR</a>
+        <a href="video.html" class="nav-link" data-i18n="nav.video">Video</a>
+        <a href="contacto.html" class="nav-link" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Menú">
-          <span></span><span></span><span></span>
-        </button>
+        <button class="lang-toggle" id="langToggle" aria-label="Change language"><span>ES</span></button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
 
   <section class="page-hero">
     <div class="container">
-      <p class="kicker" data-aos="fade-down"><i class="fa-solid fa-layer-group"></i> Plan de estudios</p>
-      <h1 class="page-title" data-aos="fade-up" data-aos-delay="100">Subáreas de la <span class="accent">Especialidad</span></h1>
-      <p class="page-sub" data-aos="fade-up" data-aos-delay="200">
-        Seis pilares formativos que estructuran el perfil del estudiante de Desarrollo Web.
-      </p>
+      <p class="kicker" data-aos="fade-down"><i class="fa-solid fa-layer-group"></i> <span data-i18n="sub.kicker">Curriculum</span></p>
+      <h1 class="page-title" data-aos="fade-up" data-aos-delay="100" data-i18n="sub.title">Subareas of the <span class="accent">Specialty</span></h1>
+      <p class="page-sub" data-aos="fade-up" data-aos-delay="200" data-i18n="sub.sub">Six formative pillars that structure the profile of the Web Development student.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
       <div class="subareas-grid">
-
         <article class="subarea-card" data-aos="fade-up" data-aos-delay="0">
           <div class="subarea-num">01</div>
           <div class="subarea-icon"><i class="fa-solid fa-network-wired"></i></div>
-          <h3 class="subarea-title">Tecnologías de la Información</h3>
-          <p class="subarea-desc">
-            Fundamentos de TI, redes, sistemas operativos y hardware. La base técnica
-            sobre la que se construye toda la especialidad.
-          </p>
-          <div class="subarea-tags">
-            <span>Redes</span><span>Hardware</span><span>Sistemas</span>
-          </div>
+          <h3 class="subarea-title" data-i18n="sub1.title">Information Technologies</h3>
+          <p class="subarea-desc" data-i18n="sub1.desc">IT fundamentals, networks, operating systems and hardware. The technical base upon which the entire specialty is built.</p>
         </article>
-
         <article class="subarea-card" data-aos="fade-up" data-aos-delay="100">
           <div class="subarea-num">02</div>
           <div class="subarea-icon"><i class="fa-solid fa-lightbulb"></i></div>
-          <h3 class="subarea-title">Emprendimiento e Innovación</h3>
-          <p class="subarea-desc">
-            Metodologías ágiles, gestión de proyectos y pensamiento creativo para
-            transformar ideas en productos tecnológicos reales.
-          </p>
-          <div class="subarea-tags">
-            <span>Ágiles</span><span>Proyectos</span><span>Creatividad</span>
-          </div>
+          <h3 class="subarea-title" data-i18n="sub2.title">Entrepreneurship & Innovation</h3>
+          <p class="subarea-desc" data-i18n="sub2.desc">Agile methodologies, project management and creative thinking to transform ideas into real tech products.</p>
         </article>
-
         <article class="subarea-card" data-aos="fade-up" data-aos-delay="200">
           <div class="subarea-num">03</div>
           <div class="subarea-icon"><i class="fa-solid fa-code"></i></div>
-          <h3 class="subarea-title">Programación para Web</h3>
-          <p class="subarea-desc">
-            HTML, CSS, JavaScript, Python, PHP y C#. Desarrollo Frontend, Backend y
-            Full-Stack con enfoque práctico en proyectos reales.
-          </p>
-          <div class="subarea-tags">
-            <span>Frontend</span><span>Backend</span><span>Full-Stack</span>
-          </div>
+          <h3 class="subarea-title" data-i18n="sub3.title">Web Programming</h3>
+          <p class="subarea-desc" data-i18n="sub3.desc">HTML, CSS, JavaScript, Python, PHP and C#. Frontend, Backend and Full-Stack development with a practical approach to real projects.</p>
         </article>
-
         <article class="subarea-card" data-aos="fade-up" data-aos-delay="300">
           <div class="subarea-num">04</div>
           <div class="subarea-icon"><i class="fa-solid fa-pen-ruler"></i></div>
-          <h3 class="subarea-title">Diseño de Software</h3>
-          <p class="subarea-desc">
-            Arquitectura de sistemas, principios de UI/UX y modelado de bases de datos
-            para construir aplicaciones robustas y escalables.
-          </p>
-          <div class="subarea-tags">
-            <span>Arquitectura</span><span>UI/UX</span><span>Bases de Datos</span>
-          </div>
+          <h3 class="subarea-title" data-i18n="sub4.title">Software Design</h3>
+          <p class="subarea-desc" data-i18n="sub4.desc">Systems architecture, UI/UX principles and database modeling to build robust and scalable applications.</p>
         </article>
-
         <article class="subarea-card" data-aos="fade-up" data-aos-delay="400">
           <div class="subarea-num">05</div>
           <div class="subarea-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-          <h3 class="subarea-title">Soporte TI</h3>
-          <p class="subarea-desc">
-            Mantenimiento preventivo y correctivo, configuración de redes LAN/WLAN
-            y atención profesional de incidencias técnicas.
-          </p>
-          <div class="subarea-tags">
-            <span>Mantenimiento</span><span>LAN/WLAN</span><span>Soporte</span>
-          </div>
+          <h3 class="subarea-title" data-i18n="sub5.title">IT Support</h3>
+          <p class="subarea-desc" data-i18n="sub5.desc">Preventive and corrective maintenance, LAN/WLAN network configuration and professional technical incident response.</p>
         </article>
-
         <article class="subarea-card" data-aos="fade-up" data-aos-delay="500">
           <div class="subarea-num">06</div>
           <div class="subarea-icon"><i class="fa-solid fa-language"></i></div>
-          <h3 class="subarea-title">English Oriented to Web Development</h3>
-          <p class="subarea-desc">
-            Vocabulario técnico, lectura de documentación oficial y comunicación
-            profesional en inglés para el entorno del desarrollo web.
-          </p>
-          <div class="subarea-tags">
-            <span>Tech English</span><span>Docs</span><span>Comunicación</span>
-          </div>
+          <h3 class="subarea-title" data-i18n="sub6.title">English Oriented to Web Dev</h3>
+          <p class="subarea-desc" data-i18n="sub6.desc">Technical vocabulary, reading official documentation and professional communication in English for the web development environment.</p>
         </article>
-
       </div>
     </div>
   </section>
@@ -140,22 +92,18 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <img src="assets/logo-placeholder.png" alt="CTP La Carpio" class="footer-logo" onerror="this.style.display='none'"/>
-        <div>
-          <p class="footer-title">CTP La Carpio</p>
-          <p class="footer-sub">Especialidad Desarrollo Web · MEP</p>
-        </div>
+        <div><p class="footer-title">CTP La Carpio</p><p class="footer-sub" data-i18n="footer.sub">Web Development Specialty · MEP</p></div>
       </div>
       <div class="footer-mep">
         <img src="assets/mep-logo-placeholder.png" alt="MEP" class="mep-logo" onerror="this.style.display='none'"/>
-        <span>Ministerio de Educación Pública</span>
+        <span data-i18n="footer.mep">Ministry of Public Education</span>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© <span id="year"></span> CTP La Carpio · Todos los derechos reservados.</p>
-    </div>
+    <div class="footer-bottom"><p>© <span id="year"></span> CTP La Carpio · <span data-i18n="footer.copy">All rights reserved.</span></p></div>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
